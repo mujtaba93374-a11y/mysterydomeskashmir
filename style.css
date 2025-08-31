@@ -113,3 +113,7 @@ main{padding-top:84px}
   .hero-content{flex-direction:column;text-align:center}
   .hero-text{text-align:center}
 }
+.service h3{
+  text-align: center;
+  color: pink;
+}
