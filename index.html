@@ -1,246 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Mystery Domes Kashmir</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<!-- Loader -->
-<div id="loader">
-  <div class="loader-box"><img src="logo.jpg" alt="">MysteryDomesKashmir...</div>
-</div>
-
-<!-- Navbar -->
-<header class="navbar">
-  <div class="brand">
-    <img src="logo.jpg" alt="logo">
-    <span class="brand-text">Mystery Domes Kashmir</span>
+  <!-- LOADER: typing MYSTERYDOMESKASHMIR -->
+  <div id="loader" aria-hidden="false">
+    <div class="loader-box"><span id="loader-text"></span></div>
   </div>
-  <button id="menuToggle" class="menu-toggle">☰</button>
-  <nav id="mainNav" class="nav">
-    <ul>
-      <li><a href="#home" class="nav-link">Home</a></li>
-      <li><a href="#schools" class="nav-link">Students Reached</a></li>
-      <li><a href="#services" class="nav-link">Services</a></li>
-      <li><a href="#gallery" class="nav-link">Gallery</a></li>
-      <li><a href="#testimonials" class="nav-link">Feedback</a></li>
-      <li><a href="#team" class="nav-link">Our Team</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-  </nav>
-</header>
 
-<main>
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-social">
-      <a href="https://www.youtube.com/@mysterydomeskashmirr" target="_blank">YouTube</a>
-      <a href="https://www.instagram.com/mysterydomeskashmir/" target="_blank">Instagram</a>
-      <a href="https://wa.me/919149845473" target="_blank">WhatsApp</a>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="brand">
+      <img src="logo.jpg" alt="logo" />
+      <span class="brand-text">Mystery Domes Kashmir</span>
     </div>
-    <div class="hero-content">
-      <img src="hero.webp" alt="Dome Image" class="hero-img">
-      <div class="hero-text">
-        <h1>Explore the mysteries of the Universe</h1>
-        <p>Portable planetarium & VR shows for students across Jammu & Kashmir.</p>
-        <a class="btn" href="https://form.jotform.com/252425671570457">Book Now</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- Students Reached -->
-  <section id="schools" class="section">
-    <h2>Students Reached</h2>
-    <div class="counters">
-      <div class="counter-box">
-        <span class="counter" data-target="12000">0</span>
-        <h3>Central Kashmir</h3>
-      </div>
-      <div class="counter-box">
-        <span class="counter" data-target="2500">0</span>
-        <h3>North Kashmir</h3>
-      </div>
-      <div class="counter-box">
-        <span class="counter" data-target="3900">0</span>
-        <h3>South Kashmir</h3>
-      </div>
-    </div>
-  </section>
+    <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
 
-  <!-- Services -->
-  <section id="services" class="section services">
-    <h2>Services We Provide</h2>
-    <div class="service-list">
-      <div class="service"><h3>School Planetarium Shows</h3> 
-Engaging astronomy shows for students, bringing
- the wonders of space right to your classroom.
-</div>
-      <div class="service"> <h3>Virtual Reality Space Experiences</h3>
-Immersive VR simulations of planets, stars, and galaxies, giving students a realistic space adventure.
-</div>
-      <div class="service"> <h3> Educational Workshops</h3>
-Interactive sessions teaching astronomy, space science, and the universe in a fun and easy-to-understand way.
-h</div>
-      <div class="service"><h3>Special Events & Exhibitions</h3>
-Space-themed events for schools and communities, including demonstrations, activities, and VR experiences.
-</div>
-    </div>
-  </section>
+    <nav id="mainNav" class="nav">
+      <ul>
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#schools">Students Reached</a></li>
+        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li><a class="nav-link" href="#testimonials">Feedback</a></li>
+        <li><a class="nav-link" href="#team">Our Team</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Gallery -->
-  <section id="gallery" class="section gallery">
-    <h2>Our Gallery</h2>
-    <div class="gallery-slider">
-      <video src="v1.mp4" controls  class="gallery-item"></video>
-      <video src="v2.mp4" controls  class="gallery-item"></video>
-     <video src="v3.mp4" controls  class="gallery-item"></video>
-      <img src="vr.webp" alt="Show 4" class="gallery-item">
-      <img src="hero.webp" alt="Show 5" class="gallery-item">
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="testimonials" class="section testimonials">
-    <h2>Feedback From Schools</h2>
-    <div class="testimonials-wrap">
-      <button class="t-btn prev">‹</button>
-      <div class="testimonials-viewport">
-        <div class="testimonials-track" id="testimonialsTrack">
-          <!-- 10 Dummy testimonials -->
-          <div class="testimonial">
-            <img src="salvatore.jpeg" alt="School Photo">
-            <h2>Salvatore Intl School</h2>
-            <h3>Principal Name</h3>
-            <p>“Amazing experience for our students!”</p>
-          </div>
-          <div class="testimonial">
-            <img src="mps.jpg" alt="School Photo">
-            <h2>Muslim Public School</h2>
-            <h3>Principal Name</h3>
-            <p>“Great learning with fun.”</p>
-          </div>
-          <div class="testimonial">
-            <img src="oxford.jpg"School Photo">
-            <h2>Oxford Presentation School</h2>
-            <h3>Principal Name</h3>
-            <p>“VR show was fantastic!”</p>
-          </div>
-          <div class="testimonial">
-            <img src="vr.webp" alt="School Photo">
-            <h2>Samma public school</h2>
-            <h3>Principal Name</h3>
-            <p>“Excellent initiative.”</p>
-          </div>
-          <div class="testimonial">
-            <img src="vr.webp" alt="School Photo">
-            <h2>Hira Public School</h2>
-            <h3>Principal Name</h3>
-            <p>“Children were amazed!”</p>
-          </div>
-          <div class="testimonial">
-            <img src="logo.jpg" alt="School Photo">
-            <h2>SSM noorbagh</h2>
-            <h3>Principal Name</h3>
-            <p>“Very knowledgeable.”</p>
-          </div>
-          <div class="testimonial">
-            <img src="logo.jpg" alt="School Photo">
-            <h2>Mps baliheran</h2>
-            <h3>Principal Name</h3>
-            <p>“Teachers also loved it.”</p>
-          </div>
-          <div class="testimonial">
-            <img src="logo.jpg" alt="School Photo">
-            <h2>MMkS nehalpora</h2>
-            <h3>Principal Name</h3>
-            <p>“Highly recommended.”</p>
-          </div>
-          <div class="testimonial">
-            <img src="logo.jpg" alt="School Photo">
-            <h2>Lucent magam</h2>
-            <h3>Principal Name</h3>
-            <p>“Interactive sessions.”</p>
-          </div>
-          <div class="testimonial">
-            <img src="logo.jpg" alt="School Photo">
-            <h2></h2>al-mustafa institute
-            <h3>Principal Name</h3>
-            <p>“Loved the planetarium.”</p>
-          </div>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <img src="hero.webp" alt="Dome Image" class="hero-img" />
+        <div class="hero-text">
+          <h1>Explore the mysteries of the Universe</h1>
+          <p>Portable planetarium & VR shows for students across Jammu & Kashmir.</p>
+          <a class="btn" href="https://form.jotform.com/252425671570457" target="_blank">Book Now</a>
         </div>
       </div>
-      <button class="t-btn next">›</button>
-    </div>
-  </section>
+    </section>
 
-  <!-- Our Team -->
-  <section id="team" class="section team">
-    <h2>Our Team</h2>
-    <div class="team-list">
-      <div class="team-member">
-        <img src="mujtaba.jpg" alt="Mujtaba">
-        <h3>Mujtaba</h3>
-        <p>Event Coordinator</p>
-       
+    <!-- COUNTERS -->
+    <section id="schools" class="section">
+      <h2>Students Reached</h2>
+      <div class="counters">
+        <div class="counter-box">
+          <span class="counter" data-target="12000">0</span>
+          <h3>Central Kashmir</h3>
+        </div>
+        <div class="counter-box">
+          <span class="counter" data-target="2500">0</span>
+          <h3>North Kashmir</h3>
+        </div>
+        <div class="counter-box">
+          <span class="counter" data-target="3900">0</span>
+          <h3>South Kashmir</h3>
+        </div>
       </div>
-      <div class="team-member">
-        <img src="person.jpeg" alt="Sajad">
-        <h3>Sajad</h3>
-        <p>Main Operator</p>
-        
-      </div>
-      <div class="team-member">
-        <img src="person.jpeg" alt="Iqbal">
-        <h3>Iqbal</h3>
-        <p>Operator</p>
-     
-      </div>
-      <div class="team-member">
-        <img src="person.jpeg" alt="Aadil">
-        <h3>Aadil</h3>
-        <p>ASM Anantnag</p>
-    
-      </div>
-      <div class="team-member">
-        <img src="person.jpeg" alt="Waheed">
-        <h3>Waheed</h3>
-        <p>ASM Kulgam</p>
-       
-      <!--</div>
-       <div class="team-member">
-        <img src="dummy.png" alt="Gils">
-        <h3>Girl</h3>
-        <p>ASM Pulwama</p>
-       
-      </div>
-       <div class="team-member">
-        <img src="dummy.png" alt="Gils">
-        <h3>Girls</h3>
-        <p>ASM kupwara</p>
-       
-      </div>
-    -->
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section contact">
-    <h2>Contact Us</h2>
-    <div class="contact-actions">
-      <a class="btn outline" href="tel:9149845473">Call: 9149845473</a>
-      <a class="btn outline" href="mailto:mysterydomeskashmir@gmail.com">Mail Us</a>
-      <a class="btn outline" href="https://wa.me/919149845473" target="_blank">WhatsApp</a>
-    </div>
-  </section>
-</main>
+    <!-- SERVICES -->
+    <section id="services" class="section services">
+      <h2>Services We Provide</h2>
+      <div class="service-list">
+        <div class="service">
+          <h3>School Planetarium Shows</h3>
+          <p>Engaging astronomy shows for students, bringing the wonders of space to your classroom.</p>
+        </div>
+        <div class="service">
+          <h3>Virtual Reality Experiences</h3>
+          <p>Immersive VR simulations of planets, stars, and galaxies.</p>
+        </div>
+        <div class="service">
+          <h3>Educational Workshops</h3>
+          <p>Interactive sessions teaching astronomy and space science.</p>
+        </div>
+        <div class="service">
+          <h3>Special Events & Exhibitions</h3>
+          <p>Space-themed events for schools and communities.</p>
+        </div>
+      </div>
+    </section>
 
-<footer class="footer">
-  <p>© 2025 Mystery Domes Kashmir · All Rights Reserved</p>
-</footer>
+    <!-- GALLERY (auto sliding) -->
+    <section id="gallery" class="section gallery">
+      <h2>Our Gallery</h2>
+      <div class="slider-viewport">
+        <div class="slider-track" id="galleryTrack">
+          <video class="gallery-item" src="v1.mp4" controls></video>
+          <video class="gallery-item" src="v2.mp4" controls></video>
+          <img class="gallery-item" src="vr.webp" alt="Show" />
+          <img class="gallery-item" src="hero.webp" alt="Show" />
+          <video class="gallery-item" src="v3.mp4" controls></video>
+          <img class="gallery-item" src="vr.webp" alt="Show" />
+        </div>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section testimonials">
+      <h2>Feedback From Schools</h2>
+      <div class="testimonials-wrap">
+        <button class="t-btn prev" aria-label="Previous testimonials">‹</button>
+        <div class="slider-viewport">
+          <div class="slider-track" id="testimonialsTrack">
+            <div class="testimonial">
+              <img src="salvatore.jpeg" alt="School Photo" />
+              <h3>Salvatore Intl School</h3>
+              <p>“Amazing experience for our students!”</p>
+            </div>
+            <div class="testimonial">
+              <img src="mps.jpg" alt="School Photo" />
+              <h3>Muslim Public School</h3>
+              <p>“Great learning with fun.”</p>
+            </div>
+            <div class="testimonial">
+              <img src="oxford.jpg" alt="School Photo" />
+              <h3>Oxford Presentation School</h3>
+              <p>“VR show was fantastic!”</p>
+            </div>
+            <div class="testimonial">
+              <img src="vr.webp" alt="School Photo" />
+              <h3>Samma Public School</h3>
+              <p>“Excellent initiative.”</p>
+            </div>
+            <div class="testimonial">
+              <img src="logo.jpg" alt="School Photo" />
+              <h3>Hira Public School</h3>
+              <p>“Children were amazed!”</p>
+            </div>
+            <div class="testimonial">
+              <img src="logo.jpg" alt="School Photo" />
+              <h3>SSM Noorbagh</h3>
+              <p>“Very knowledgeable.”</p>
+            </div>
+          </div>
+        </div>
+        <button class="t-btn next" aria-label="Next testimonials">›</button>
+      </div>
+    </section>
+
+    <!-- OUR TEAM -->
+    <section id="team" class="section team">
+      <h2>Our Team</h2>
+      <div class="team-wrap">
+        <button class="team-btn prev" aria-label="Previous team">‹</button>
+        <div class="slider-viewport">
+          <div class="slider-track" id="teamTrack">
+            <div class="team-member">
+              <img src="mujtaba.jpg" alt="Mujtaba" />
+              <h3>Mujtaba</h3>
+              <p>Event Coordinator</p>
+            </div>
+            <div class="team-member">
+              <img src="person.jpeg" alt="Sajad" />
+              <h3>Mr Sajad</h3>
+              <p>Main Operator</p>
+            </div>
+            <div class="team-member">
+              <img src="person.jpeg" alt="Iqbal" />
+              <h3>Mr Iqbal</h3>
+              <p>Operator</p>
+            </div>
+            <div class="team-member">
+              <img src="person.jpeg" alt="Aadil" />
+              <h3>Mr Aadil</h3>
+              <p>ASM Anantnag</p>
+            </div>
+            <div class="team-member">
+              <img src="person.jpeg" alt="Waheed" />
+              <h3>Mr Waheed</h3>
+              <p>ASM Kulgam</p>
+            </div>
+          </div>
+        </div>
+        <button class="team-btn next" aria-label="Next team">›</button>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2>Contact Us</h2>
+      <div class="contact-actions">
+        <a class="btn outline" href="tel:9149845473">Call: 9149845473</a>
+        <a class="btn outline" href="mailto:mysterydomeskashmir@gmail.com">Mail Us</a>
+        <a class="btn outline" href="https://wa.me/919149845473" target="_blank">WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Mystery Domes Kashmir · All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
